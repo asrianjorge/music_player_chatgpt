@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+          <div class="player__left">
+            <img id="album-art" class="player__album-art" src="../v2/src/voodoo.jpg" alt="Album Art">
+            <div class="player__song-details">
+              <h2 id="song-title" class="player__song-title">Song Title</h2>
+              <p id="artist-name" class="player__artist-name">Artist Name</p>
+            </div>
+          </div>
+          <div class="player__center">
+            <div class="player__controls">
+              <button id="previous-button" class="player__control-button player__previous-button">&#8249;</button>
+              <button id="play-button" class="player__control-button player__play-button">&#9654;</button>
+              <button id="next-button" class="player__control-button player__next-button">&#8250;</button>
+            </div>
+            <div class="player__track-info">
+              <div class="player__track-time">
+                <span id="track-time" class="player__track-time-label">0:00 / 0:00</span>
+                <input id="track-slider" class="player__track-slider" type="range" min="0" max="100" value="0">
+              </div>
+              <div class="player__volume">
+                <label for="volume-slider" class="player__volume-label">Volume</label>
+                <input id="volume-slider" class="player__volume-slider" type="range" min="0" max="100" value="100">
+              </div>
+            </div>
+          </div>
+          <div class="player__right">
+            <ul id="playlist" class="player__playlist">
+              <li data-src="../v2/src/voodoo.mp3" data-art="../v2/src/voodoo.jpg" data-artist="Badshah, J Balvin, Tainy">Voodoo</li>
+              <li data-src="https://www.example.com/song2.mp3" data-art="https://via.placeholder.com/150" data-artist="Artist 2">Song 2</li>
+              <li data-src="https://www.example.com/song3.mp3" data-art="https://via.placeholder.com/150" data-artist="Artist 3">Song 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
